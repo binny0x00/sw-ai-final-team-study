@@ -5,7 +5,6 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(process.env.PORT ?? 3000);
   // req.cookies로 쿠키를 읽을 수 있게 설정
   app.use(cookieParser());
 
@@ -31,5 +30,7 @@ async function bootstrap() {
         transform: true,
       }),
   );
+
+    await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
