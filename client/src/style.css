@@ -1,0 +1,68 @@
+/* 전체 화면 기본 스타일 */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #eef2f7;
+}
+
+/* 폼 요소 글꼴 */
+button,
+input {
+    font: inherit;
+}
+
+/* 화면 중앙 배치 */
+.page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+/* 로그인 카드 */
+.card {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    gap: 12px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #d8dee9;
+    border-radius: 8px;
+}
+
+/* 입력창 스타일 */
+input {
+    padding: 12px;
+    border: 1px solid #c8d0dc;
+    border-radius: 6px;
+}
+
+/* 기본 버튼 스타일 */
+button {
+    padding: 12px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    background: #2563eb;
+    cursor: pointer;
+}
+
+/* 화면 전환 버튼 */
+button.link {
+    color: #2563eb;
+    background: transparent;
+}
+
+/* 입력 도움말 스타일 */
+.hint {
+    margin: -4px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* 에러 메시지 스타일 */
+.error {
+    color: #b91c1c;
+    font-weight: 700;
+}
