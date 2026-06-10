@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: team_study_postgres
+    restart: unless-stopped
+    ports:
+      - "5555:5432"
+    environment:
+      POSTGRES_DB: team_study
+      POSTGRES_USER: team_study_user
+      POSTGRES_PASSWORD: team_study_password
+    volumes:
+      - team_study_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  team_study_postgres_data:
